@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<script>
+    		
+    		function showHideSideBar() {
+    			
+    			document.getElementById("sideBar").classList.toggle("active");
+    			
+    		}
+    		
+    		function calculateInterest(){
+    			
+    			let pStr = document.getElementById("principal").value;
+    			
+    			let p = parseFloat(pStr);
+    			
+    			let rStr = document.getElementById("rate").value; 
+    			let r = parseFloat(rStr);
+    			
+    		let tStr = document.getElementById("time").value;
+    		let t = parseFloat(tStr);
+    		
+    	
+    			let interest = (p*r*t)/100;
+    			
+   let interestStr = "Your interest gained at the end of " + t + " years is N" +  interest;
+    			
+    			
+    			document.getElementById("final-interest").innerHTML = (interestStr);
+    			
+    			
+    			alert(interestStr);
+    			
+    		}
+    		
+    		function calculateAmount(){
+    			
+    			let pStr = document.getElementById("principal").value;
+    			
+    			let p = parseFloat(pStr);
+    			
+    			let rStr = document.getElementById("rate").value; 
+    			let r = parseFloat(rStr);
+    			
+    		let tStr = document.getElementById("time").value;
+    		let t = parseFloat(tStr);
+    		
+    	
+    			let interest = (p*r*t)/100;
+    			
+    			let amount = interest + p;
+    			
+   let amountStr = "Your total amount gained at the end of " + t + " years is N" +  amount;
+    			
+    			
+    			document.getElementById("final-amount").innerHTML = (amountStr);
+    			
+    			
+    			alert(amountStr);
+    			
+    		}
+    		
+    		
+    	</script>
+
+<body>
+    
+
+    <header>
+
+        <span>PIGGYVEST</span>
+        
+        <div id="toggle-btn" onclick="showHideSideBar()">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+        
+   <div id="sideBar">
+        
+        
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </ul>
+        
+    </div>
+
+    </header>
+
+
+    <form action="" id="input-details">
+
+        <div class="row small-label">
+          <label>Principal Amount:</label> <input type="text" class="first-input"  placeholder="Amount" id="principal">	<input type="text" class="first-input"  placeholder="Currency" style="margin-left: 0px;" id="currencY" readonly>
+        <br><br><br>
+        </div>
+  
+        <div class="row small-label">
+          <label>Rate of Interest:</label> <input type="text" class="answer-box" placeholder="In Percentage" id="rate">
+        <br><br><br>
+        </div>
+ 
+       <div class="row small-label">
+        <label>Loan Tenure:</label> <input type="text" class="answer-box" placeholder="In Year" id="time">
+        <br><br><br>
+       </div>
+  
+        <div class="row small-label">
+          <label>Total Interest:</label><input type="button" class="answer-box empty-answer-box" onclick="calculateInterest();" id="total-interest" value="Total Interest">
+        <br><br><br>
+        </div>
+  
+        <div class="row small-label">
+          <label>Total Amount:</label><input type="button" class="answer-box empty-answer-box" id="total-amount" onclick="calculateAmount();" value="Total Amount">   
+       </div>
+    
+  
+  <div id="final-interest"></div>
+  <div id="final-amount"></div>
+  
+  
+      </form>
+
+      <div id="left-image">
+          <img src="Rectangle 8.png" alt="">
+      </div>
+
+
+</body>
+</html>
