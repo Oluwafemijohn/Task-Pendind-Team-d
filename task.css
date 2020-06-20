@@ -1,0 +1,216 @@
+
+/* Background */
+#invest-container{
+margin: 10px;
+display: flex;
+clear: both;
+}
+ /* Content */
+#how-to-invest{   
+float: left;
+width: 50%;
+height: 35rem;
+background: #FFFFFF;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+ /* Title */
+#header-how-to-invest{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+color: rgba(0, 0, 0, 0.76);
+align-items: center;
+justify-content: center;
+display: flex;
+}
+
+#size{
+    width: 400px;
+    padding: 10px;
+}
+
+ /* Subtitle */
+#invest{   
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+color: rgba(0, 0, 0, 0.76);
+}
+
+
+/* Background */
+#btn-learn-more{
+    
+border: 1px solid rgba(0, 0, 0, 0.76);
+box-sizing: border-box;
+border-radius: 5px;
+width: 100px;
+justify-content: center;
+padding-left: 10px;
+}
+#btn-learn-more > a{
+    text-decoration: none;
+}
+
+#graph-image{
+    float: right;
+    width: 50%;
+    height: 40%;    
+}
+
+#What-is-PiggyVest-container{
+    align-items:center;
+    background-color: #0AA25F;;
+    padding: 40px;
+    justify-content: center;
+    display: inline-block;
+    height: 400px;
+    width: 100%;
+}
+#piggy-size{
+    width: 700px;
+    align-content: center;
+}
+#head-piggyvest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+}
+#paragraph{
+    text-align: center;
+}
+
+#get-started-container{
+    height: 200px;
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+}
+#div-sign-up{
+    float: left;
+    width: 200px;
+    margin-top: 90px;
+    margin-left: 200px;
+}
+#Ready-to-get-started{
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 45px;
+}
+#div-sign-up > a{
+    text-decoration: none;
+}
+#div-contact-us{
+    float: right;
+    width: 250px;
+    display: flex;
+    margin-top: 90px;
+    margin-right: 200px;
+}
+#start-free-trial >a{
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+#contact-Us{
+    text-decoration: none;
+}
+
+#start-free-trial{
+    background-color: red;
+    margin-right: 10px;
+    display: flex;
+    border-radius: 2.5px;
+    height: 25px;
+    padding-top: 3px;
+}
+
+#contact-us >a{
+    text-decoration: none;
+    /* padding-left: 15px; */
+    
+}
+
+#contact-us{
+    border: 1px solid;
+    margin-right: 10px;  
+    padding-top: 3px;
+    text-align: center;
+    
+}
+
+#footer{
+    display: flexbox;
+   background-color:  #828282;
+}
+#footer-link{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+
+#link-container{
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+#link-container > a{
+    text-decoration: none;
+}
+a:nth-child(4){
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+#eclipe{
+  display: flex;
+  justify-content: center;
+}
+#circle{
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;    
+}
+#circle> img{
+    width: 25px;
+}
+#footer > img{
+    width: 1000px;
+    display: flex;
+    align-self: center;   
+    /* margin-top: 50px; */
+    
+}
+#copy{
+    display: flex;
+  justify-content: center;
+}
+#copy-right{
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;   
+    
+}
